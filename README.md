@@ -1,6 +1,8 @@
 # Adafruit_SSD1306_Commands
 This document lists all the functions of the Adafruit_SSD1306 library
 
+### Generic functions
+
 **Clear display**
 ```
 display.clearDisplay();
@@ -30,3 +32,16 @@ display.drawFastHLineInternal(X, Y, HEIGHT, color);
 ```
 display.drawFastVLineInternal(X, Y, HEIGHT, color);
 ```
+
+### Return value
+
+**GetPixel**
+```
+display.getPixel(X, Y);
+```
+**GetBuffer** - Get base address of display buffer for direct reading or writing
+```
+display.getBuffer();
+```
+
+### Scrolling functions
