@@ -1,5 +1,6 @@
 # Adafruit_SSD1306_Commands
 This document lists all the functions of the Adafruit_SSD1306 library
+[GitHub - ADAFRUIT](https://github.com/adafruit/Adafruit_SSD1306/blob/master/Adafruit_SSD1306.cpp)
 
 ## Generic functions
 
@@ -33,6 +34,11 @@ display.drawFastHLineInternal(X, Y, HEIGHT, color);
 display.drawFastVLineInternal(X, Y, HEIGHT, color);
 ```
 
+**InvertDisplay**
+```
+display.invertDisplay();
+```
+
 ## Return value
 
 **GetPixel**
@@ -45,3 +51,26 @@ display.getBuffer();
 ```
 
 ## Scrolling functions
+
+**Startscrollright / Startscrollleft**
+```
+display.startscrollright(START , STOP);
+```
+OR
+```
+display.startscrollleft(START , STOP);
+```
+
+**Startscrolldiagright / Startscrolldiagleft**
+```
+display.startscrolldiagright(START , STOP);
+```
+OR
+```
+display.startscrolldiagleft(START , STOP);
+```
+
+**Stopscroll**
+```
+display.stopscroll();
+```
